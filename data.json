@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "author": "Julien",
+      "title": "blog post 1",
+      "content": "this is the content of blog post 1",
+      "date_posted": "April 20, 2020"
+    },
+    {
+      "author": "Jon",
+      "title": "blog post 2",
+      "content": "this is the content of blog post 2",
+      "date_posted": "April 21, 2020"
+    },
+    {
+      "author": "Jane",
+      "title": "blog post 3",
+      "content": "this is the content of blog post 3",
+      "date_posted": "April 2, 2020"
+    }
+  ]
+}
