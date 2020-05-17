@@ -4,10 +4,14 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/main.css') }}">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Chartist CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+
   {% if title %}
     <title>Simulation - {{ title }}</title>
   {% else %}
@@ -25,5 +29,36 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"></script>
+    
+  <!-- Chartist CDN -->
+  <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> 
+
+  <script>
+   class Chart {
+     constructor(xData, yData) {
+       this.xData = xData;
+       this.yData = yData;
+     }
+
+     createGraph() {
+       const data = {
+         labels: this.xData,
+         series: [this.yData]
+       }
+       const options = {
+         width: '600px',
+         height: '360px'
+       };
+       new Chartist.Line('.ct-chart', data, options);
+     }
+   }
+
+   const xData = [0, 5, 10, 15, 20];
+   const yData = [0, 5, 10, 15, 20];
+   const chart = new Chart(xData, yData);
+   chart.createGraph();
+
+   
+  </script>
 </body>
-</html>
+</html>    
