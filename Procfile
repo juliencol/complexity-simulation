@@ -1,1 +1,1 @@
-web: gunicorn app:complexity-simulation
+web: gunicorn complexity-simulation:app
