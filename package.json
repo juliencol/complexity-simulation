@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "chartist-plugin-axistitle": "^0.0.7"
+  }
+}

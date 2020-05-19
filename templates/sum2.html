@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container text-center">
+  <div class="d-flex mt-5">
+    <div class="mr-3">
+      <h6>Code de la fonction en python</h6>
+      <div class="code-img-container">
+        <img class="code-img"
+          src="https://res.cloudinary.com/isep/image/upload/v1589814961/Screen_Shot_2020-05-18_at_17.15.38_rqrgjf.png"
+          alt="">
+      </div>
+      <p>Complexité en temps : O(1)</p>
+      <p>Complexité en mémoire : O(1)</p>
+    </div>
+    <div class="ml-3">
+      <h6 class="">Evolution du temps d'exécution en ms en fonction de n</h6>
+      <div class="graph ct-chart ct-perfect-fourth"></div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
