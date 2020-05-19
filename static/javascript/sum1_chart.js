@@ -1,5 +1,5 @@
 const drawChart = (yData) => {
-  const xData = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+  const xData = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100];
   const chart = new Chart(xData, yData);
   chart.createGraph();
   console.log(numberOfValues);
@@ -8,5 +8,7 @@ const drawChart = (yData) => {
 const submitButton = document.getElementById('submit-button');
 submitButton.addEventListener('click', (e) => {
   e.preventDefault();
-  drawChart([5, 10, document.getElementById('user-input').value]);
+  drawChart([0.0021457672119140625, 0.0011920928955078125, 0.00095367431640625, 0.00095367431640625, 0.0021457672119140625, 0.0021457672119140625, 0.0019073486328125, 0.0021457672119140625, 0.0016689300537109375, 0.0019073486328125, 0.0030994415283203125, 0.0021457672119140625, 0.0016689300537109375, 0.0030994415283203125, 0.00286102294921875, 0.00286102294921875, 0.0040531158447265625, 0.0040531158447265625, 0.003814697265625, 0.0040531158447265625, document.getElementById('user-input').value]);
 });
+
+
