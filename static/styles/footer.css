@@ -4,4 +4,11 @@ footer {
   font-size: 16px;
   position: relative;
   bottom: 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: none;
+  }
 }
